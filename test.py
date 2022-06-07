@@ -21,7 +21,7 @@ def move(board, mark, position):
     if position==0:
         board_move=mark+board[1:]
     if position==19:
-        board_move=board[:-2]+mark
+        board_move=board[:-1]+mark
     if position>0 and position<19:
         board_move=board[:position]+mark+board[position+1:]
     return board_move
@@ -64,7 +64,7 @@ def tictactoe(board):
         print(board_start)
     
      
-board_input='---------------------'
+board_input='--------------------'
 tictactoe(board_input)
 
       
